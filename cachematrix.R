@@ -30,7 +30,7 @@ makeCacheMatrix <- function(matrix_original = matrix())
     ## define an internal function which can be evoked like a
     ## java method or C++ class function to set the non computed
     ## "original" matrix.
-    ## Also calculates the inverse 
+    ## Also resets the inverse matrix to NULL
     set_matrix <- function(matrix_new)
     {
         matrix_original <<- matrix_new ## Assign our new matrix
